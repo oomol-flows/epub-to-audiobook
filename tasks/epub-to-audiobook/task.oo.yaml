@@ -41,3 +41,4 @@ executor:
     spawn: false
 title: EPUB to AudioBook
 icon: ":carbon:book:"
+description: Enter an epub file and output audiobook

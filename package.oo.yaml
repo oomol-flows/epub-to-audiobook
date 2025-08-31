@@ -5,3 +5,7 @@ scripts:
     poetry install --no-root
     sudo apt update && apt install -y ffmpeg espeak-ng
 icon: ./icon.png
+name: epub-to-audiobook
+description: Enter an epub file and output audiobook
+displayName: Epub to AudioBook
+releaseNotes: init
