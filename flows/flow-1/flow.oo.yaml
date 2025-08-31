@@ -1,0 +1,7 @@
+nodes:
+  - node_id: epub-to-audiobook#1
+    task: self::epub-to-audiobook
+    inputs_from:
+      - handle: epub
+      - handle: audiobook
+        value:

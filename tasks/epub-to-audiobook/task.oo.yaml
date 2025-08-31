@@ -1,0 +1,43 @@
+ui:
+  default_width: 450
+inputs_def:
+  - handle: epub
+    json_schema:
+      type: string
+      ui:widget: file
+      ui:options:
+        excludeAll: true
+        filters:
+          - name: EPUB
+            extensions:
+              - epub
+  - handle: audiobook
+    json_schema:
+      type: string
+      ui:widget: save
+      ui:options:
+        filters:
+          - extensions:
+              - m4b
+            name: M4B
+        excludeAll: true
+    value:
+    nullable: true
+outputs_def:
+  - handle: audiobook
+    json_schema:
+      type: string
+      ui:widget: save
+      ui:options:
+        filters:
+          - extensions:
+              - m4b
+            name: M4B
+        excludeAll: true
+executor:
+  name: python
+  options:
+    entry: __init__.py
+    spawn: false
+title: EPUB to AudioBook
+icon: ":carbon:book:"

@@ -1,0 +1,7 @@
+version: 0.0.1
+scripts:
+  bootstrap: |
+    npm install
+    poetry install --no-root
+    sudo apt update && apt install -y ffmpeg espeak-ng
+icon: ./icon.png
